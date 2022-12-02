@@ -1,0 +1,190 @@
+/* montserrat-100 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/montserrat-v25-latin-100.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/montserrat-v25-latin-100.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/montserrat-v25-latin-100.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/montserrat-v25-latin-100.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/montserrat-v25-latin-100.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/montserrat-v25-latin-100.svg#Montserrat') format('svg'); /* Legacy iOS */
+  }
+  /* montserrat-300 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/montserrat-v25-latin-300.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/montserrat-v25-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/montserrat-v25-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/montserrat-v25-latin-300.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/montserrat-v25-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/montserrat-v25-latin-300.svg#Montserrat') format('svg'); /* Legacy iOS */
+  }
+  /* montserrat-regular - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v25-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/montserrat-v25-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/montserrat-v25-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/montserrat-v25-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/montserrat-v25-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/montserrat-v25-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+  }
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ .campus{
+    padding: 100px !important;
+    padding-bottom: 0 !important;
+    position: relative;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold !important;
+    /* margin: 0 !important; */
+ }
+ @media screen and (min-width:50px) and (max-width: 576px){
+    .campus{
+        padding: 50px 20px !important;
+    }
+    .campus-head-para{
+        display: none !important;
+    }
+    .campus-intro{
+        margin-top: 0px !important;
+    }
+}
+@media screen and (min-width:990px) and (max-width: 1200px){
+    .c-box{
+        height: 400px !important;
+    }
+} 
+@media screen and (min-width:767px) and (max-width: 992px){
+    
+    .campus{
+        padding: 100px 0px !important;
+    }
+    .c-box{
+        height: 400px;
+    }
+}
+ .sub-head{
+    color: #209765 !important;
+    letter-spacing: 5px !important;
+    font-weight: bold;
+    font-size: 22px;
+    text-shadow: 0px 0px 2px rgb(0, 0, 0,0.4);
+    word-spacing: 10px !important;
+    font-variant: small-caps !important;
+    
+}
+.campus-header .s-main-head{
+    color: #363636 !important;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 1px;
+    text-transform: capitalize !important;
+}
+.campus-head-para{
+    text-align: center;
+    font-size: 14px;
+    color: #888888;
+    width: 750px;
+    font-weight: 400;
+    margin: auto;
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+}
+.campus-intro{
+    display: flex;
+    margin-top: 80px;
+}
+.c-box
+{
+    /* height: 350px; */
+    padding:0 !important;
+    /* margin: 5px; */
+    text-shadow: 0px 0px 2px rgb(0, 0, 0,0.5);
+}
+.c-box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.c-intro{
+    content: '';
+    
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(20, 89, 60, 0.8);
+    transition-duration: 0.3s;
+    text-align: center;
+    color: white;
+    padding: 70px 50px;
+}
+.c-box:hover .c-intro{
+    background-color: rgb(0, 0, 0,0.8);
+}
+.c-img1{
+    background: url(./images/campus-online.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+.c-img2{
+    background: url(./images/library.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+.c-img3{
+    background: url(./images/campus-scholership.png);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+.c-intro i{
+    font-size: 32px;
+}
+.c-intro .cp1{
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-top: 30px;
+}
+
+.c-intro .cp2{
+    font-size: 14px;
+    font-weight: 300;
+}
+.c-intro a{
+    font-variant: small-caps;
+    color: white;
+    text-decoration: none;
+}
+.c-btn{
+    margin: 50px;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #209765;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    box-shadow: 0px 4px 0px #146241;
+    text-transform: capitalize;
+    transition-duration: .3s;
+}
+.c-btn:hover{
+    box-shadow: none;
+    transform: translateY(5px);
+}

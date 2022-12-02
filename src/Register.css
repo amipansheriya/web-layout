@@ -1,0 +1,143 @@
+/* montserrat-100 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/montserrat-v25-latin-100.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/montserrat-v25-latin-100.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/montserrat-v25-latin-100.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/montserrat-v25-latin-100.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/montserrat-v25-latin-100.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/montserrat-v25-latin-100.svg#Montserrat') format('svg'); /* Legacy iOS */
+  }
+  /* montserrat-300 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/montserrat-v25-latin-300.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/montserrat-v25-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/montserrat-v25-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/montserrat-v25-latin-300.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/montserrat-v25-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/montserrat-v25-latin-300.svg#Montserrat') format('svg'); /* Legacy iOS */
+  }
+  /* montserrat-regular - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v25-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/montserrat-v25-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/montserrat-v25-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/montserrat-v25-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/montserrat-v25-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/montserrat-v25-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+  }
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.register{
+    background: linear-gradient(rgb(13, 75, 52,0.7) , rgb(13, 75, 52,0.7)), url(./images/rightedu2.png);
+    /* height: 100vh; */
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    /* position: relative; */
+    /* z-index: -1; */
+}
+@media screen and (min-width: 50px) and (max-width: 576px){
+    .reg-form{
+        width: 100% !important;
+    }
+    .input::placeholder{
+        font-size: 15px;
+    }
+    .input{
+        font-size: 15px;
+    }
+}
+/* .register::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(13, 75, 52,0.7);
+    backdrop-filter: blur(10px);
+    top: 0;
+    left: 0;
+    z-index: 1;
+} */
+.reg-con{
+    z-index: 999;
+    color: white;
+    /* position: absolute; */
+    height: 100%;
+    width: 100%;
+}
+.register-head{
+    padding: 30px;
+}
+.reg-form{
+    padding: 30px;
+    background-color: rgb(255, 255, 255,0.1);
+    width:60%;
+    margin: auto;
+}
+.register .txt-box{
+    background-color: rgb(13, 75, 52,0.3);
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    border: 1px solid rgb(255, 255, 255,0.3);
+    box-shadow: none !important;
+}
+input::placeholder{
+    color: white;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+input + input{
+    margin-top: 20px;
+}
+input + select{
+    margin-top: 20px;
+}
+select + input{
+    margin-top: 20px;
+}
+select + select{
+    margin-top: 20px;
+}
+.gender{
+    height: 40px;
+    border: none;
+    color: white;
+    text-transform: capitalize;
+}
+.add-detail{
+    padding: 20px;
+    width: 100%;
+    background-color: rgb(13, 75, 52,0.5);
+    margin-top: 20px;
+}
+.add-detail h5{
+    width: max-content;
+    color: #4fb590;
+    font-weight: bold;
+}
+.add-submit{
+    padding: 10px 20px;
+    background-color: rgb(13, 75, 52,0.5);
+    color: white;
+    border: 1px solid rgb(255, 255, 255,0.3);
+    border-radius: 3px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}

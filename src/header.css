@@ -1,0 +1,280 @@
+/* montserrat-100 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/montserrat-v25-latin-100.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/montserrat-v25-latin-100.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/montserrat-v25-latin-100.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/montserrat-v25-latin-100.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/montserrat-v25-latin-100.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/montserrat-v25-latin-100.svg#Montserrat') format('svg'); /* Legacy iOS */
+  }
+  /* montserrat-300 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/montserrat-v25-latin-300.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/montserrat-v25-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/montserrat-v25-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/montserrat-v25-latin-300.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/montserrat-v25-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/montserrat-v25-latin-300.svg#Montserrat') format('svg'); /* Legacy iOS */
+  }
+  /* montserrat-regular - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v25-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/montserrat-v25-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/montserrat-v25-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/montserrat-v25-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/montserrat-v25-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/montserrat-v25-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+  }
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 100;
+}
+.site-b{
+    background-color: #209765;
+    height: 7px;
+    width: 0%;
+    animation-name: site;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    transition-timing-function: ease-out;
+}
+@keyframes site {
+    from{width: 0%;}
+    to{width: 100%;}
+}
+.slider{
+    height: 800px;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin:0;
+    z-index: 10;
+}
+
+.bg-video{
+    height: 800px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+.slider::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 800px;
+    width: 100%;
+    background-color: rgb(0, 0, 0,0.7);
+    z-index: 15;
+}
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    width: 100%;
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-d{
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+}
+.contact-d div{
+    text-align: left;
+}
+
+.logo img{
+    width: 100px;
+    object-fit: cover;
+}
+.headline .contact-d p{
+    margin: 0;
+    padding: 0;
+}
+.con-i{
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+    color: #209765;
+    text-shadow: 0px 0px 2px rgb(0, 0, 0,0.4);
+}
+.con-d{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+}
+.con-v{
+    font-weight: 300;
+    color: hsl(155, 63%, 75%);
+}
+.navbar{
+    width: 100%;
+    background-color: rgb(255, 255, 255,0.9);
+    height: 65px;
+    margin: 0;
+    padding: 0;
+}
+.mainmenu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.mainmenu li{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0;
+}
+.mainmenu li a{
+    color: #656565;
+    text-decoration: none;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 19px;
+    transition-duration: .3s;
+}
+.mainmenu li a:hover{
+    color: #209765;
+}
+.navbar{
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0,0.3);
+}
+.navbar .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.social-i{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.social-i:last-child{
+    padding-right: 0px !important;
+}
+.con-d{
+    color: #c4e6d8 !important;
+}
+.social-i a{
+    color:#656565;
+    font-size: 20px;
+    padding: 18px 20px;
+    border-left: 1px solid rgb(203, 203, 203);
+    transition-duration: 0.3s;
+}
+.social-i a:hover{
+    color: #209765;
+}
+.home a{
+    color: #209765 !important;
+    font-weight: bold;
+}
+.menu{
+    font-size: 30px;
+}
+
+@media screen and (min-width:765px) and (max-width: 991px) {
+    .mainmenu li{
+        padding: 10px 5px !important;
+    }
+    .con-d{
+        display: none;
+    }
+    .con-i{
+        padding: 0;
+        margin: 0;
+    }
+    .contact{
+        justify-content: right;
+    }
+    .contact-d + .contact-d{
+        margin-left: 40px;
+    }
+    .logo{
+        display: flex !important;
+        justify-content: left;
+
+    }
+}
+@media screen and (min-width: 50px) and (max-width: 576px) {
+    .headline .contact{
+        display: none;
+    }
+    .logo{
+        display: flex !important;
+        width: 100% !important;
+        justify-content: center !important;
+    }
+    .mainmenu{
+        display: none;
+    }
+    
+}
+
+.slider{
+    position: relative !important;
+}
+.slidetxt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute !important;
+    top: 350px;
+    z-index: 25 !important;
+}
+.s-txt{
+    font-variant: small-caps;
+    color: #209765;
+    position: relative;
+}
+.sub-head{
+    color: #209765 !important;
+    letter-spacing: 5px !important;
+    font-weight: bold;
+    font-size: 22px;
+    text-shadow: 0px 0px 2px rgb(0, 0, 0,0.4);
+    word-spacing: 10px !important;
+}
+.s-main-head{
+    color: white !important;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 70px;
+    letter-spacing: 1px;
+}
+.s-txt::before{
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 100px;
+    background-color: #209765;
+    bottom: -50px;
+    left: 43%;
+}
